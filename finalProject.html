@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB-115 Final Project</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
+    <!-- Banner section -->
     <div class="banner">
-        <img src="banner/BYOP.png" alt="Build Your Own Planner">
+        <img src="banner/BYOP.png" alt="Build Your Own Planner"> <!-- Banner image -->
     </div>
     
+    <!-- Container for the form -->
     <div class="container">
+        <!-- Form for user input -->
         <form id="mealPlanForm">
+            <!-- User information inputs -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
             <label for="email">Email:</label>
@@ -21,12 +25,15 @@
             <input type="text" id="goal" name="goal"><br><br>
             
             <!-- Meal inputs for each day -->
+            <!-- Note: Meal inputs are generated dynamically by JavaScript -->
             
+            <!-- Buttons for generating and clearing meal plan -->
             <input type="button" value="Generate Meal Plan" onclick="generateMealPlan()">
             <input type="reset" value="Clear Planner">
         </form>
     </div>
 
+    <!-- Link to external JavaScript file -->
     <script src="projectJS.js"></script> 
 </body>
 </html>

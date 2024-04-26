@@ -1,29 +1,50 @@
+/* CSS styles for the body */
+body {
+    background-color: #f0f0f0; /* Set background color to match the form */
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* CSS styles for the banner */
 .banner {
     text-align: center;
+    margin-top: 5%; /* Lower the banner by 5% from the top */
+    overflow: hidden; /* Ensure rounded corners are applied properly */
 }
 
 .banner img {
     width: 100%;
+    border: 1px solid #000; /* Add a border to the image itself */
+    border-radius: 20px; /* Add rounded corners */
     max-width: 600px; /* Adjust the max-width as needed */
 }
 
+/* CSS styles for the container */
 .container {
     margin: 20px auto;
     width: 80%;
+    background-color: #f0f0f0; /* Set background color to match the form */
+    padding: 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+    overflow: hidden; /* Ensure rounded corners are applied properly */
 }
 
 label {
     display: block;
+    margin-bottom: 5px; /* Add spacing between labels and inputs */
 }
 
 input[type="text"],
 input[type="email"],
 input[type="button"],
 input[type="reset"] {
-    width: 100%;
+    width: calc(100% - 20px); /* Adjust width to account for padding */
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    border: 1px solid #ccc; /* Add border for input elements */
+    border-radius: 5px; /* Add border-radius for rounded corners */
 }
 
 input[type="button"],
@@ -36,5 +57,20 @@ input[type="reset"] {
 
 input[type="button"]:hover,
 input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* CSS styles for the buttons */
+button {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
     background-color: #0056b3;
 }
